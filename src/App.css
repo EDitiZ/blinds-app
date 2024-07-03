@@ -9,9 +9,11 @@ label {
   margin: 10px 0;
 }
 
-input[type="number"], input[type="text"] {
+input[type="number"], input[type="text"], select {
   margin-left: 10px;
   padding: 5px;
+  width: 200px; /* Ensure the width is consistent */
+  box-sizing: border-box;
 }
 
 .window-forms {
@@ -20,15 +22,18 @@ input[type="number"], input[type="text"] {
   justify-content: center;
 }
 
-.print-button {
+.print-button, .export-button {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
 }
 
-.print-button:hover {
+.print-button:hover, .export-button:hover {
   background-color: #45a049;
 }

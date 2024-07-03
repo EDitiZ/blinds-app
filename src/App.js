@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import WindowForm from './WindowForm';
-import PrintButton from './PrintButton';
+import ExportButton from './ExportButton';
 import './App.css';
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Window Blinds Application</h1>
+      <h1>Enkeled 005</h1>
       <label>
-        Number of Windows:
+        Numri i Dritareve:
         <input type="number" value={numWindows} onChange={handleNumWindowsChange} />
       </label>
       <div className="window-forms">
@@ -36,7 +36,7 @@ function App() {
           />
         ))}
       </div>
-      <PrintButton windowDetails={windowDetails} />
+      <ExportButton windowDetails={windowDetails} />
     </div>
   );
 }
